@@ -3,7 +3,7 @@ import os
 
 version = '0.1dev'
 
-setup(name='zojax.django.widgets.thumbnail',
+setup(name='zojax.django.widgets.datetime',
       version=version,
       description="Widgets for images with thumbnails.",
       long_description="",
