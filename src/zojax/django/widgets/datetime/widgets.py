@@ -14,10 +14,12 @@ from django.utils.safestring import mark_safe
 # DATETIMEWIDGET
 calbtn = u'''<img src="%sadmin/img/admin/icon_calendar.gif" alt="calendar" id="%s_btn" style="cursor: pointer;" title="Select date" />
 <script type="text/javascript">
+    $(document).ready(function () {
     Calendar.setup({
         inputField     :    "%s",
         dateFormat     :    "%s",
         trigger        :    "%s_btn"
+    })
     });
 </script>'''
 
