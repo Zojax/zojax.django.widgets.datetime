@@ -35,10 +35,13 @@ class DateTimeWidget(forms.widgets.TextInput):
         }
         js = (
               '%sdatetime/js/jscal2.js'%settings.MEDIA_URL,
-              '%sdatetime/js/lang/ru.js'%settings.MEDIA_URL,
+              '%sdatetime/js/lang/en.js'%settings.MEDIA_URL,
         )
 
     dformat = '%Y-%m-%d'
+    
+    language = None
+    
     def render(self, name, value, attrs=None):
         if value is None: value = ''
         final_attrs = self.build_attrs(attrs, type=self.input_type, name=name)
