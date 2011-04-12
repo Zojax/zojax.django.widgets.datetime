@@ -27,15 +27,15 @@ class DateTimeWidget(forms.widgets.TextInput):
     class Media:
         css = {
             'all': (
-                    '%sdatetime/css/jscal2.css'%settings.MEDIA_URL,
-                    '%sdatetime/css/border-radius.css'%settings.MEDIA_URL,
-                    '%sdatetime/css/reduce-spacing.css'%settings.MEDIA_URL,
-                    '%sdatetime/css/win2k/win2k.css'%settings.MEDIA_URL,
+                    '%sdatetime/css/jscal2.css'%settings.STATIC_URL,
+                    '%sdatetime/css/border-radius.css'%settings.STATIC_URL,
+                    '%sdatetime/css/reduce-spacing.css'%settings.STATIC_URL,
+                    '%sdatetime/css/win2k/win2k.css'%settings.STATIC_URL,
                     )
         }
         js = (
-              '%sdatetime/js/jscal2.js'%settings.MEDIA_URL,
-              '%sdatetime/js/lang/en.js'%settings.MEDIA_URL,
+              '%sdatetime/js/jscal2.js'%settings.STATIC_URL,
+              '%sdatetime/js/lang/en.js'%settings.STATIC_URL,
         )
 
     dformat = '%Y-%m-%d'
